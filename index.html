@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html{
+            /* подключаем курсор */
+            cursor: url(https://img.icons8.com/ios-filled/50/sneakers.png),auto;
+        }
+        body{
+            /* градиентный фон */
+            background: linear-gradient(45deg, royalblue 65%, darkorange 35%);
+            min-height: 100vh;
+            font-family: "ZCOOL KuaiLe", cursive;
+        }
+        main{
+            width: 80%;
+            margin: 150px auto;
+        }
+        article{
+            background: #fff;
+            padding: 28px 32px;
+            border-radius: 16px;
+        }
+        .title{
+            font-size: 64px;
+            color: darkorange;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-shadow: 3px 4px royalblue, 4px 5px darkorange;
+            width: fit-content;
+            background: linear-gradient(transparent 60%, rgba(255,140,0,0.5) 40%);
+            background-size: 0%;
+            background-repeat: no-repeat;
+            transition: 0.5s ease;
+        }
+        .title:hover{
+            background-size: 100%;
+            cursor: url(https://img.icons8.com/?size=100&id=n4oDGSFQQfvR&format=png&color=000000),auto
+        }
+        .subtitle{
+            font-weight: bold;
+            color: darkorange;
+            padding: 8px;
+            font-size: 24px;
+            margin: 24px 0;
+            text-shadow: 2px 2px 1px royalblue;
+        }
+        ::selection{
+            color: #ff00ff;
+            background: lightblue;
+        }
+        section{
+            margin-top: 48px;
+            background-color: #fff;
+            padding: 12px 32px;
+            border-radius: 16px;
+            box-shadow: 8px 8px darkorange, 16px 18px royalblue;
+            width: 100%;
+        }
+        .sneakers-container{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            
+        }
+        .sneaker-container{
+            width: 280px;
+            border-radius: 12px;
+            box-shadow: 12px 12px royalblue, 0 0 16px #edfafa;
+            margin-bottom: 32px;
+            height: 465px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+        .sneaker-name{
+            padding-left: 16px;
+            font-weight: bold;
+            font-size: 24px;
+            color: royalblue;
+            text-shadow: 2px 2px darkoranges;
+        }
+        .sneaker-price{
+            margin-top: 8px;
+            font-size: 18px;
+            padding-left: 16px;
+            font-size: 18px;
+            font-weight: bold;
+            color: darkorange;
+            text-shadow: 2px 2px royalblue;
+            margin-bottom: 20px;
+        }
+        .img-container{
+            height: 65%;
+            border-radius: 12px 12px 0 0;
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            margin-bottom: 8px;
+        }
+        .img1{
+            background: url(https://a.lmcdn.ru/product/R/T/RTLADI743501_22850346_3_v1.jpg);
+        }
+        .img2{
+            background: url(https://a.lmcdn.ru/img600x866/R/T/RTLACY311002_22082365_3_v1.jpg);
+        }
+        .img3{
+            background:url(https://a.lmcdn.ru/img600x866/R/T/RTLACZ972001_21207515_3_v1.jpg);
+        }
+        .img4{
+            background: url(https://a.lmcdn.ru/img600x866/R/T/RTLADU186401_25249037_3_v2.jpg);
+        }
+        .img5{
+            background: url(https://a.lmcdn.ru/img600x866/R/T/RTLADU188801_25239589_3_v1.jpg);
+        }
+        .img6{
+            background: url(https://a.lmcdn.ru/img600x866/R/T/RTLADT847501_25131299_3_v2.jpg);
+        }
+        .img7{
+            background: url(https://a.lmcdn.ru/img600x866/R/T/RTLADQ394901_24228706_3_v1.jpg);
+        }
+        .img8{
+            background: url(https://a.lmcdn.ru/img600x866/R/T/RTLADQ791201_24178596_3_v1.jpg);
+        }
+        .img9{
+            background: url(https://a.lmcdn.ru/img600x866/R/T/RTLADU187601_25155465_3_v1.jpg);
+        }
+        .button{
+            width: 260px;
+            padding: 12px;
+            box-shadow: 3px 3px black;
+            border: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 16px 10px 4px 10px;
+            text-shadow: 2px 2px white;
+            background-color: darkorange;
+            color: darkblue;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <div class="title">Sneakers shop</div>
+            <div class="subtitle">The best sneakers of 2024</div>
+        </article>
+        <section>
+            <div class="sneakers-container">
+                <div class="sneaker-container">
+                    <div class="img-container img1"></div>
+                    <div class="sneaker-name">Кроссовки Air Monarch IV</div>
+                    <div class="sneaker-price">50$</div>
+                    <div class="button">ADD TO CART</div>
+                </div>
+                <div class="sneaker-container">
+                    <div class="img-container img2"></div>
+                    <div class="sneaker-name">FLEXAGON ENERGY TR 4</div>
+                    <div class="sneaker-price">60$</div>
+                    <div class="button">ADD TO CART</div>
+                </div>
+                <div class="sneaker-container">
+                    <div class="img-container img3"></div>
+                    <div class="sneaker-name">Milenio Tech PUMA Black-Shadow Gray</div>
+                    <div class="sneaker-price">80$</div>
+                    <div class="button">ADD TO CART</div>
+                </div> 
+
+                    <div class="sneaker-container">
+                        <div class="img-container img4"></div>
+                        <div class="sneaker-name">Кроссовки GEL-VENTURE 9</div>
+                        <div class="sneaker-price">70$</div>
+                        <div class="button">ADD TO CART</div>
+                    </div>
+
+                    <div class="sneaker-container">
+                        <div class="img-container img5"></div>
+                        <div class="sneaker-name">Кроссовки GT-2160</div>
+                        <div class="sneaker-price">65$</div>
+                        <div class="button">ADD TO CART</div>
+                    </div>
+
+                    <div class="sneaker-container">
+                        <div class="img-container img6"></div>
+                        <div class="sneaker-name">Кроссовки Nike Cortez</div>
+                        <div class="sneaker-price">55$</div>
+                        <div class="button">ADD TO CART</div>
+                    </div>
+
+                    <div class="sneaker-container">
+                        <div class="img-container img7"></div>
+                        <div class="sneaker-name">Кроссовки Spire 4</div>
+                        <div class="sneaker-price">85$</div>
+                        <div class="button">ADD TO CART</div>
+                    </div>
+
+                    <div class="sneaker-container">
+                        <div class="img-container img8"></div>
+                        <div class="sneaker-name">Кроссовки NANO X4</div>
+                        <div class="sneaker-price">75$</div>
+                        <div class="button">ADD TO CART</div>
+                    </div>
+
+                    <div class="sneaker-container">
+                        <div class="img-container img9"></div>
+                        <div class="sneaker-name">Кроссовки GEL-VENTURE 9</div>
+                        <div class="sneaker-price">115$</div>
+                        <div class="button">ADD TO CART</div>
+                    </div>
+        </section>
+    </main>
+    <!-- 
+     Nike Air Jordan 1 Low "Light Smoke Grey"  https://static.insales-cdn.com/r/fTOvyXdsMP8/rs:fit:550:550:1/plain/images/products/1/4070/738635750/jordan-air-jordan-1-low-light-smoke-grey_15541764_43079740_2048.jpg@webp
+     Nike Air Jordan 4 "PSG - Paris Saint Germain" https://static.insales-cdn.com/r/8d-IPrQ1grQ/rs:fit:550:550:1/plain/images/products/1/5680/725825072/jordan-air-jordan-4-retro-psg-paris-saint-germain_15817631_43088662_2048.jpg@webp
+     Nike Air Jordan 1 High "Satin Black Toe" https://static.insales-cdn.com/r/123R4rq8Tfw/rs:fit:550:550:1/plain/images/products/1/5939/725817139/jordan-wmns-air-jordan-1-high-og-satin-black-toe_14436943_43078619_2048.jpg@webp
+     Nike x Dior Air Jordan 1 High https://static.insales-cdn.com/r/YjksJBDnYpY/rs:fit:550:550:1/plain/images/products/1/3318/738471158/jordan-air-jordan-1-retro-high-dior_15624504_43103426_2048.jpg@webp
+     Nike x Zion Williamson Air Jordan 1 Low "Voodoo" https://static.insales-cdn.com/r/U7-YeNIttBU/rs:fit:550:550:1/plain/images/products/1/2200/725829784/jordan-air-jordan-1-low-og-zion-williamson-voodoo_19388282_43179443_2048.jpg@webp
+     Nike Air Jordan 1 High "Rebellionaire" https://static.insales-cdn.com/r/oD9alNzfgFE/rs:fit:550:550:1/plain/images/products/1/1040/725828624/jordan-air-jordan-1-high-og-rebellionaire_17769736_43087051_2048.jpg@webp
+    -->
+</body>
+</html>
